@@ -3,7 +3,7 @@ import * as models from './models';
 export interface Question {
     id: number;
 
-    question: string;
+    description: string;
 
     answer: Question.AnswerEnum;
 
