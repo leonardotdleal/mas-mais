@@ -10,11 +10,22 @@ Aplicativo inicialmente desenvolvido para trabalho final da disciplina de progra
 
 * **Leonardo Tadeu Diniz Leal** - [leonardotdleal](https://github.com/leonardotdleal)
 
-### Comandos git para uso em sala ###
+### Baixar e rodar aplicação ###
 
 Baixar repositório: 
 
 	git clone https://github.com/leonardotdleal/mas-mais.git
+
+Instalação dos pacotes: 
+
+	npm install
+	
+Rodando a aplicação
+
+	cd mas-mais
+	ionic serve
+
+### Comandos git para uso em sala ###
 	
 Configurando username e email:
 

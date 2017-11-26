@@ -13,9 +13,9 @@ export class HomePage {
   private ranking: string;
 
   constructor(public navCtrl: NavController) {
-    this.title = "Mas Mais App";
+    this.title = "Mas Mais";
     this.description = "Um jogo para reeducar a forma como você utiliza as expressões 'mas' e 'mais' no dia a dia.";
-    this.start = "Iniciar";
+    this.start = "Iniciar Jogo";
     this.ranking = "Ranking";
 
   }

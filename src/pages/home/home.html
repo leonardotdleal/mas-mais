@@ -1,22 +1,34 @@
 <ion-content>
 
-  <ion-card>
-    <ion-card-header>
+  <ion-card class="title-card">
+    <ion-card-header class="title-text" text-center>
       {{title}}
     </ion-card-header>
-    <ion-card-content>
+    
+  </ion-card>
+  
+  <ion-card class="description-card">
+    <ion-card-content class="description-text" text-center>
       {{description}}
     </ion-card-content>
   </ion-card>
 
   <ion-grid>
     <ion-row>
-      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6>
-        <button ion-button color="primary" (click)="startGame()" full>{{start}}</button>
+      <ion-col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2></ion-col>
+      <ion-col col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8>
+        <button ion-button color="primary" (click)="startGame()" full class="button" text-center>
+          {{start}}
+        </button>
       </ion-col>
-      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6>
+      <ion-col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2></ion-col>
+      <ion-col col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8>
         <button ion-button color="primary" (click)="viewRanking()" full>{{ranking}}</button>
       </ion-col>
+      <ion-col col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2></ion-col>
     </ion-row>
   </ion-grid>
 
