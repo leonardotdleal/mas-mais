@@ -15,8 +15,8 @@ page-home {
         font-weight: bold;
     }
 
-    @media screen and (max-width: 319px) {
-        .title-card, .description-card {
+    @media screen and (min-width: 321px) and (orientation: portrait) {
+        .title-card, .description-card, .button {
             margin-top: 15%;
         }
     }

@@ -2,17 +2,17 @@ import { Question } from "../../model/models";
 
 export const QuestionsFile: Question[] = [{
     id: 1,
-    description: "1 blablabla?",
+    description: "Três mais três são seis.",
     answer: Question.AnswerEnum.mas
   },
   {
     id: 2,
-    description: "2 blablabla?",
+    description: "Não faço mais nada do que for preciso.",
     answer: Question.AnswerEnum.mas
   },
   {
     id: 3,
-    description: "3 blablabla?",
+    description: "Os médicos fizeram todos os possíveis mas o paciente não sobreviveu.",
     answer: Question.AnswerEnum.mas
   }
 ];
