@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { QuestionsFile } from './database/questions';
+import { QuestionsFile } from '../database/questions';
 import { Question } from '../model/models';
 import { HomePage } from '../home/home';
+import { UserPage } from '../user/user';
 
 @Component({
   selector: 'page-questions',
@@ -12,6 +13,7 @@ export class QuestionsPage {
   private index: number = 1;
   private question: Question;
   private questions: Question[];
+  public userPage: UserPage;
 
   constructor(public navCtrl: NavController) {
     this.getQuestions();
@@ -33,6 +35,13 @@ export class QuestionsPage {
     this.index++;
     console.log(this.index);
     console.log(option);
+
+    console.log(this.question);
+
+    /*if (this.question.answer === option)
+      this.userPage.setScore();*/
+
+
     this.displayActualQuestion();
   }
 

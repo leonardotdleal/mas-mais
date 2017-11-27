@@ -2,25 +2,30 @@
 
   <ion-card class="title-card">
     <ion-card-header class="title-text" text-center>
-      Digite seu nome
+      Vamos começar
     </ion-card-header>
   </ion-card>
 
-  <ion-item>
-    <ion-label color="primary" floating>Nome</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+  <ion-card class="description-card">
+    <ion-card-content class="description-text" text-center>
+      <form [formGroup]="userForm" (ngSubmit)="startGame()">
+        <ion-item>
+          <ion-label floating primary>Digite seu nickname</ion-label>
+          <ion-input type="text" formControlName="nickname">
+          </ion-input>
+        </ion-item>
 
-  <ion-grid>
-    <ion-row>
-      <ion-col col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3>
-      </ion-col>
-      <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6>
-        <button ion-button color="primary" (click)="startGame()" full>Iniciar</button>
-      </ion-col>
-      <ion-col col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3></ion-col>
+            <ion-col col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6>
+              <button ion-button type="submit" [disabled]="!userForm.valid" full>Iniciar</button>
+            </ion-col>
+            <ion-col col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3></ion-col>
+          </ion-row>
+        </ion-grid>
+      </form>
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>

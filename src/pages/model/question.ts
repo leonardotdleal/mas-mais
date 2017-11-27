@@ -8,6 +8,7 @@ export interface Question {
     answer: Question.AnswerEnum;
 
 }
+
 export namespace Question {
     export enum AnswerEnum {
         mas = <any> 'mas',
