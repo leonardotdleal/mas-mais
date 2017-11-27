@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { QuestionsPage } from '../questions/questions';
+import { UserPage } from '../user/user';
 
 @Component({
   selector: 'page-home',
@@ -21,7 +22,7 @@ export class HomePage {
   }
 
   public startGame():void {
-    this.navCtrl.push(QuestionsPage);
+    this.navCtrl.push(UserPage);
   }
 
   public viewRanking():void {
