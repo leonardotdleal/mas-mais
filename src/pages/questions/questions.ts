@@ -39,18 +39,6 @@ export class QuestionsPage {
     }
       
     this.index++;
-<<<<<<< HEAD
-=======
-    console.log(this.index);
-    console.log(option);
-
-    console.log(this.question);
-
-    /*if (this.question.answer === option)
-      this.userPage.setScore();*/
-
-
->>>>>>> 62ba71e619e9ca6acde9758e5c83ea1e15e011b6
     this.displayActualQuestion();
   }
 
