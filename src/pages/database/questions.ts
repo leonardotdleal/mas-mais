@@ -1,4 +1,4 @@
-import { Question } from "../../model/models";
+import { Question } from "../model/models";
 
 export const QuestionsFile: Question[] = [{
     id: 1,
