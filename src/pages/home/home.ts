@@ -20,6 +20,7 @@ export class HomePage {
   }
 
   public startGame():void {
+    QuestionsPage.points = 0;
     this.navCtrl.push(QuestionsPage);
   }
 

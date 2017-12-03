@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { HomePage } from "../home/home";
+import { QuestionsPage } from "../questions/questions";
 // import { Question } from '../model/models';
 // import { HomePage } from '../home/home';
 
@@ -9,12 +11,24 @@ import { NavController } from 'ionic-angular';
 })
 export class ScorePage {
   private image: string;
-  private points: number = 0;
+  public points: number;
+  private qpage: QuestionsPage = new QuestionsPage(null);
 
   constructor(public navCtrl: NavController) {
-    this.image = "../../assets/imgs/oh-no.png";
+    this.points = QuestionsPage.points;
+    this.image = this.getImageFinish();
   }
 
+  private getImageFinish(): string {
+    if (this.points < 5)
+      return "../../assets/imgs/bad.png";
+    else if (this.points >= 5 && this.points < 7)
+      return "../../assets/imgs/oh-no.png";
+    else
+      return "../../assets/imgs/lol.png";
+  }
 
-
+  private nextPage(): void {
+    this.navCtrl.push(HomePage);
+  }
 }
