@@ -17,7 +17,6 @@ export class HomePage {
     this.description = "Um jogo para reeducar a forma como você utiliza as expressões 'mas' e 'mais' no dia a dia.";
     this.start = "Iniciar Jogo";
     this.ranking = "Ranking";
-
   }
 
   public startGame():void {

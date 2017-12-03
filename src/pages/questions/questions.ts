@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { QuestionsFile } from './database/questions';
 import { Question } from '../model/models';
 import { HomePage } from '../home/home';
+import { ScorePage } from "../score/score";
 
 @Component({
   selector: 'page-questions',
@@ -11,7 +12,8 @@ import { HomePage } from '../home/home';
 export class QuestionsPage {
   private index: number = 1;
   private question: Question;
-  private questions: Question[];
+  private questions: Array<Question>;
+  private points: number = 0;
 
   constructor(public navCtrl: NavController) {
     this.getQuestions();
@@ -23,16 +25,20 @@ export class QuestionsPage {
   }
 
   private displayActualQuestion(): void {
-    if (this.index <= this.questions.length)
+    if (this.index <= this.questions.length) {
       this.question = this.questions.find(question => question.id === this.index);
-    else
-      this.navCtrl.push(HomePage);
+      this.question.description = this.question.description.replace("mas", "____").replace("mais", "____");
+    } else {
+      console.log(this.points);
+      this.navCtrl.push(ScorePage);
+    }
   }
 
   private selectAnswer(option: Question.AnswerEnum): void {
+    if (option === this.question.answer)
+      this.points++;
+      
     this.index++;
-    console.log(this.index);
-    console.log(option);
     this.displayActualQuestion();
   }
 

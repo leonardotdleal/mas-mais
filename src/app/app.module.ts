@@ -3,16 +3,17 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
-
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { QuestionsPage } from '../pages/questions/questions';
+import { ScorePage } from "../pages/score/score";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    QuestionsPage
+    QuestionsPage,
+    ScorePage
   ],
   imports: [
     BrowserModule,
@@ -22,7 +23,8 @@ import { QuestionsPage } from '../pages/questions/questions';
   entryComponents: [
     MyApp,
     HomePage,
-    QuestionsPage
+    QuestionsPage,
+    ScorePage
   ],
   providers: [
     StatusBar,

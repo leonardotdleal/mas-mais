@@ -3,12 +3,12 @@ import { Question } from "../../model/models";
 export const QuestionsFile: Question[] = [{
     id: 1,
     description: "Três mais três são seis.",
-    answer: Question.AnswerEnum.mas
+    answer: Question.AnswerEnum.mais
   },
   {
     id: 2,
     description: "Não faço mais nada do que for preciso.",
-    answer: Question.AnswerEnum.mas
+    answer: Question.AnswerEnum.mais
   },
   {
     id: 3,
