@@ -30,7 +30,6 @@ export class UserPage {
 
   private setUser():void {
     this.user.nickname = this.userForm.value.nickname;
-    console.log(this.user);
   }
 
 }
