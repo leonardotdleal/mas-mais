@@ -10,6 +10,13 @@ Aplicativo inicialmente desenvolvido para trabalho final da disciplina de progra
 
 * **Leonardo Tadeu Diniz Leal** - [leonardotdleal](https://github.com/leonardotdleal)
 
+### Pré-requisitos para rodar a aplicação ###
+
+Instalações:
+
+	[NodeJS](https://nodejs.org)
+	[Ionic Framework](https://ionicframework.com/)
+
 ### Baixar e rodar aplicação ###
 
 Baixar repositório: 

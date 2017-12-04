@@ -23,7 +23,7 @@ export class ScorePage {
     else if (this.points >= 5 && this.points < 7)
       return "../../assets/imgs/oh-no.png";
     else
-      return "../../assets/imgs/lol.png";
+      return "../../assets/imgs/giphy.gif";
   }
 
   private nextPage(): void {
